@@ -1,0 +1,1355 @@
+/*........... My Login Page ........ */
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background: url("/src/assets/background4.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 550px;
+}
+
+.left-container img {
+  width: 55%;
+  height: 90vh;
+  filter: blur(1px);
+}
+
+.right-container {
+  background-color: white;
+}
+
+.container .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  width: 58%;
+  height: 100%;
+  color: #e4e4e4;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 275px;
+}
+
+.container .logreg-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100%-58%);
+  height: 100%;
+  background: transparent;
+  color: #e4e4e4;
+}
+
+.agree {
+  color: #e4e4e4;
+}
+
+.content .logo {
+  font-size: 30px;
+  font-weight: 900;
+  position: relative;
+  top: 22px;
+}
+
+.text {
+  width: 200px;
+  height: 173px;
+}
+
+.text h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  color: black;
+}
+
+.text h2 span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #5391ff;
+  font-weight: bold;
+}
+
+.logreg-box .form_box {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #e4e4e4;
+}
+
+.form_box h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.form_box .input_box {
+  position: relative;
+  width: 340px;
+  height: 50px;
+  border-bottom: 2px solid #e4e4e4;
+  margin: 30px 0;
+}
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color: #e4e4e4;
+  padding-right: 28px;
+}
+
+input::placeholder {
+  color: #e4e4e4;
+}
+
+.input_box label {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transform: translateY(50%);
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5 ease;
+}
+
+.input_box input:focus ~ label,
+.input_box input:focus ~ label {
+  top: -55%;
+}
+
+.input_box .icon {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  font-size: 19px;
+}
+
+.remember-forgot {
+  font-size: 14.5px;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  color: #e4e4e4;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form_box .login-register {
+  font-size: 14.5px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+  color: #e4e4e4;
+}
+
+.form_box .login-register p a {
+  color: #e4e4e4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+/* .....MEDIA QUERIES FOR LOGIN AND REGISTRATION PAGES..... */
+
+@media (max-width: 768px) {
+  .logreg-box .form_box {
+    padding: 40px 20px;
+    width: 100%;
+  }
+
+  .input_box input {
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 10px;
+  }
+
+  .form_box h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .form_box .input_box {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+  }
+}
+
+/*................. END.............  */
+
+/*.............. HOME PAGE .................*/
+
+/* Footer Styling for homepage */
+
+footer .contact h1 {
+  margin-bottom: 2rem;
+}
+
+#social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials {
+  height: 100px;
+  width: 100px;
+  /* line-height: 110px; */
+  text-align: center;
+  border-radius: 50%;
+  background: #c8d9a3;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .socials a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .socials a i {
+  font-size: 60px;
+  /* line-height: 10px; */
+  color: #3d7373;
+  text-align: center;
+}
+
+/* Navigation Styling */
+
+html {
+  width: 100%;
+}
+nav {
+  padding: 15px 30px;
+}
+
+nav .nav-items ul a {
+  text-decoration: none;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items ul li {
+  font-size: 20px;
+  list-style: none;
+  display: inline;
+  margin: 25px;
+  cursor: pointer;
+  color: #3d7373;
+}
+
+.nav-items ul li:hover {
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid#8aa099;
+  padding-bottom: 4px;
+}
+
+section {
+  padding: 0;
+  margin-top: 0;
+}
+
+.nav-items ul li button {
+  padding: 10px 9px;
+  font-size: 20px;
+}
+
+.header .logo {
+  font-size: 1.4rem;
+  color: #3d7373;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header .nav-items {
+  font-size: 1rem;
+}
+
+.header button {
+  margin-left: 18px;
+  padding: 10px 8px;
+  color: black;
+  font-weight: bold;
+  width: 90px;
+  border-radius: 20px;
+  background-color: #72a69c;
+  border: none;
+}
+
+.header button:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  transform: translate3d(1.3);
+}
+
+/* Section 2 of Home page */
+
+.page {
+  background-color: #a6bf6f;
+  padding: 60px 70px;
+  width: 100%;
+}
+
+.section2 .Page_title h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  width: 70%;
+  color: #3d7373;
+}
+
+.section2 .page_image img {
+  width: 500px;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+
+/* Section 3 of Home page */
+
+.section3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 80px;
+}
+
+.section3 .images {
+  display: flex;
+  margin: 50px auto;
+}
+
+.section3 .images img {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin: auto 10px;
+}
+
+.section3 .info {
+  font-family: "Monserrat";
+  width: 100%;
+  color: #012611;
+  margin: auto 5%;
+}
+
+.section3 .info p {
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.section3 .info h1 {
+  display: inline;
+  font-weight: bold;
+}
+
+/* ............Testinomial Section....... */
+
+.Why {
+  font-family: "Monserrat";
+  color: #3d7373;
+  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 3%;
+}
+
+#testimonials {
+  font-family: "Monserrat";
+  text-align: center;
+  justify-content: center;
+  background-color: #c8d9a3;
+  color: #3d7373;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+
+.testimonial-image {
+  width: 25%;
+  height: 20%;
+  margin: 35px 20px;
+}
+
+/* ............Section 4............  */
+
+#section4 {
+  padding: 120px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interior_design .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interior_design img {
+  float: left;
+  height: 600px;
+}
+
+#section4 .info {
+  width: 50%;
+  margin-left: 30px;
+}
+
+#section .info h1 {
+  font-weight: bold;
+  font-family: "Monserrat";
+  font-size: 2.5rem;
+}
+
+#section .info p {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+footer {
+  background-color: #fff;
+  padding: 60px 70px;
+  width: 100%;
+}
+footer .contact h1 {
+  color: #012611;
+  /* color: black; */
+  font-size: 30px;
+  margin: auto 5px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Responsive Designs  */
+@media screen and (max-width: 2000px) {
+  nav #menu-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    padding: 5px 15px;
+  }
+  .nav-items ul li {
+    font-size: 10px;
+    margin: 10px;
+  }
+
+  section {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .nav-items ul li button {
+    padding: 5px 4px;
+    font-size: 10px;
+  }
+
+  .header .logo {
+    font-size: 0.8rem;
+  }
+
+  .header .nav-items {
+    font-size: 1rem;
+  }
+
+  .header button {
+    margin-left: 18px;
+    padding: 10px 8px;
+    color: black;
+    font-weight: bold;
+    width: 90px;
+    border-radius: 20px;
+    background-color: #72a69c;
+    border: none;
+  }
+
+  .header button:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transform: translate3d(1.3);
+  }
+  /* Section 2 of Home page */
+
+  .page {
+    padding: 55px 40px;
+    /* flex-direction: column; */
+  }
+
+  .section2 .Page_title h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 70%;
+    color: #3d7373;
+  }
+
+  .section2 .page_image img {
+    width: 250px;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+  .section3 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-items ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .flexbox {
+    align-items: flex-start !important;
+  }
+  nav #menu-bar {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  .responsive_nav_bar #menu-bar {
+    text-decoration: none;
+    margin-bottom: 1rem !important;
+  }
+
+  .responsive_nav_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* background-color: white; */
+  }
+  footer .contact h1 {
+    margin-bottom: 1rem;
+    font-size: 16px !important;
+  }
+
+  .socials {
+    height: 40px;
+    width: 40px;
+    margin: 0.7rem;
+  }
+  footer .socials a i {
+    font-size: 20px;
+    line-height: 10px;
+    color: #3d7373;
+    text-align: center;
+  }
+
+  nav {
+    padding: 5px 15px;
+  }
+  .nav-items ul li {
+    font-size: 10px;
+    margin: 10px;
+  }
+
+  section {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .nav-items ul li button {
+    padding: 5px 4px;
+    font-size: 10px;
+  }
+
+  .header .logo {
+    font-size: 0.8rem;
+  }
+
+  .header .nav-items {
+    font-size: 1rem;
+  }
+
+  .header button {
+    margin-left: 18px;
+    padding: 10px 8px;
+    color: black;
+    font-weight: bold;
+    width: 90px;
+    border-radius: 20px;
+    background-color: #72a69c;
+    border: none;
+  }
+
+  .header button:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transform: translate3d(1.3);
+  }
+  /* Section 2 of Home page */
+
+  .page {
+    padding: 20px 60px;
+  }
+
+  .section2 .Page_title h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 70%;
+    color: #3d7373;
+  }
+
+  .section2 .page_image img {
+    width: 150px;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Navigation design for 700px width device */
+
+  nav .logo h1 {
+    font-size: 1.5rem;
+  }
+  .header button {
+    padding: 8px 6px;
+    width: 60px;
+    font-size: 11px;
+  }
+
+  /* Section 2 of Home page */
+
+  .section2 .Page_title h1 {
+    font-size: 2rem;
+    width: 70%;
+  }
+
+  .section2 .page_image img {
+    width: 300px;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+
+  /* Section 3 of Home page */
+
+  .section3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+  }
+
+  .section3 .images {
+    display: flex;
+    margin: 50px auto;
+  }
+
+  .section3 .images img {
+    width: 100px;
+    height: 100px;
+    margin: auto 6px;
+  }
+
+  .section3 .info {
+    width: 100%;
+    margin: auto 5%;
+  }
+
+  .section3 .info p {
+    font-size: 15px;
+    margin-top: 5%;
+  }
+
+  .section3 .info .heading {
+    font-size: 26px;
+  }
+
+  /* Testinomial Section  */
+
+  .Why {
+    font-size: 2rem;
+  }
+
+  .carousel-item {
+    padding: 7% 15%;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+
+  .testimonial-image {
+    width: 25%;
+    height: 20%;
+    margin: 35px 20px;
+  }
+
+  /* Section 4 Styling  */
+
+  #section4 {
+    padding: 80px 40px;
+  }
+
+  .interior_design img {
+    float: left;
+    height: 400px;
+  }
+
+  #section4 .info {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+  }
+
+  #section .info p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Navigation design for 700px width device */
+
+  nav .logo h1 {
+    font-size: 1.5rem;
+  }
+  .header button {
+    padding: 8px 6px;
+    width: 60px;
+    font-size: 11px;
+  }
+
+  /* Section 2 of Home page */
+
+  .section2 .Page_title h1 {
+    font-size: 2rem;
+    width: 70%;
+  }
+
+  .section2 .page_image img {
+    width: 300px;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+
+  /* Section 3 of Home page */
+
+  .section3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+  }
+
+  .section3 .images {
+    display: flex;
+    margin: 50px auto;
+  }
+
+  .section3 .images img {
+    width: 100px;
+    height: 100px;
+    margin: auto 6px;
+  }
+
+  .section3 .info {
+    width: 100%;
+    margin: auto;
+    margin-top: 7%;
+  }
+
+  .section3 .info p {
+    font-size: 15px;
+    margin-top: 5%;
+  }
+
+  .section3 .info .heading {
+    font-size: 26px;
+  }
+
+  /* Testinomial Section  */
+
+  .Why {
+    font-size: 2rem;
+  }
+
+  .carousel-item {
+    padding: 7% 15%;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+
+  .testimonial-image {
+    width: 25%;
+    height: 20%;
+    margin: 35px 20px;
+  }
+
+  /* Section 4 Styling  */
+
+  #section4 {
+    padding: 80px 40px;
+  }
+
+  .interior_design img {
+    float: left;
+    height: 400px;
+  }
+
+  #section4 .info {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+  }
+
+  #section .info p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Navigation design for 600px width device */
+  nav #menu-bar {
+    display: inline;
+    color: #3d7373;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+  footer .contact h1 {
+    font-size: 23px;
+  }
+
+  .socials {
+    height: 60px;
+    width: 60px;
+    /* line-height: 110px; */
+  }
+
+  nav .logo h1 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .header button {
+    padding: 8px 6px;
+    width: 60px;
+    font-size: 11px;
+  }
+
+  /* Making responsive nav bar */
+  .pop_sidebar {
+    display: initial !important;
+  }
+
+  /* Section 2 of Home page */
+
+  .section2 .Page_title h1 {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+
+  .section2 .page_image img {
+    width: 250px;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+
+  /* Section 3 of Home page */
+
+  .section3 {
+    display: initial;
+    margin-top: 10%;
+    padding: 80px 40px;
+  }
+  .section3 .info {
+    width: 80%;
+    margin: auto;
+    margin-top: 7%;
+  }
+
+  .section3 .images {
+    display: flex;
+    margin: 50px auto;
+  }
+
+  .section3 .images img {
+    width: 100px;
+    height: 100px;
+    margin: auto 10px;
+  }
+  .section3 .images img:first-child {
+    margin-left: 13%;
+  }
+  .section3 .info .heading {
+    font-size: 24px;
+  }
+
+  /* Testinomial Section  */
+
+  .Why {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item {
+    padding: 7% 15%;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+
+  .testimonial-image {
+    width: 25%;
+    height: 20%;
+    margin: 35px 20px;
+  }
+
+  /* Section 4 Styling  */
+
+  #section4 {
+    padding: 120px 80px;
+    display: initial;
+  }
+
+  .interior_design .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .interior_design img {
+    height: 400px;
+  }
+
+  #info2 {
+    width: 100%;
+    margin-left: 100px;
+  }
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #section .info p {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  #section4 {
+    padding: 80px 40px;
+  }
+
+  .interior_design img {
+    height: 400px;
+  }
+
+  #section4 .info {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+  }
+
+  #section .info p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navigation design for 600px width device */
+
+  nav {
+    padding-bottom: 15px;
+  }
+  nav .nav-items {
+    display: none;
+  }
+
+  nav .logo h1 {
+    font-size: 1rem;
+  }
+
+  .header button {
+    padding: 8px 6px;
+    width: 60px;
+    font-size: 11px;
+  }
+
+  .page {
+    padding: 20px 30px;
+  }
+  /* Section 2 of Home page */
+
+  .section2 .Page_title h1 {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+
+  .section2 .page_image img {
+    width: 200px;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+
+  /* Section 3 of Home page */
+
+  .section3 {
+    display: initial;
+    margin-top: 10%;
+    padding: 80px 40px;
+  }
+  .section3 .info {
+    width: 80%;
+    margin: auto;
+    margin-top: 7%;
+  }
+
+  .section3 .images {
+    display: flex;
+    margin: 50px auto;
+  }
+
+  .section3 .images img {
+    width: 100px;
+    height: 100px;
+    margin: auto 10px;
+  }
+  .section3 .images img:first-child {
+    margin-left: 13%;
+  }
+  .section3 .info .heading {
+    font-size: 24px;
+  }
+
+  /* Testinomial Section  */
+
+  .Why {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item {
+    padding: 7% 15%;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+
+  .testimonial-image {
+    width: 25%;
+    height: 20%;
+    margin: 35px 20px;
+  }
+
+  /* Section 4 Styling  */
+
+  #section4 {
+    padding: 120px 80px;
+    display: initial;
+  }
+
+  .interior_design .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .interior_design img {
+    height: 400px;
+  }
+
+  #info2 {
+    width: 100%;
+    margin-left: 100px;
+  }
+  #info2 h1 {
+    margin-top: 40px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    margin-left: 23%;
+    width: 250px;
+  }
+  #info2 p {
+    margin-top: 23px;
+    margin-bottom: 1rem;
+    margin-left: 23%;
+    width: 250px;
+    text-align: center;
+  }
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #section .info p {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  #section4 {
+    padding: 80px 40px;
+  }
+
+  .interior_design img {
+    height: 400px;
+  }
+
+  #section4 .info {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+  }
+
+  #section .info p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 330px) {
+  /* Navigation design for 600px width device */
+
+  nav {
+    padding-bottom: 15px;
+  }
+
+  nav .logo h1 {
+    font-size: 0.8rem;
+  }
+
+  .page {
+    padding: 31px 18px 77px 28px;
+  }
+  /* Section 2 of Home page */
+
+  .section2 .Page_title h1 {
+    font-size: 1rem;
+  }
+
+  .section2 .page_image img {
+    width: 170px;
+  }
+
+  /* Section 3 of Home page */
+
+  .section3 .info .heading {
+    font-size: 1.3rem;
+  }
+
+  /* Testinomial Section  */
+
+  .Why {
+    font-size: 1.3rem;
+  }
+
+  .carousel-item {
+    padding: 7% 15%;
+  }
+  .carousel-item h2 {
+    font-size: 1.1rem;
+  }
+  .carousel-inner {
+    padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+
+  .testimonial-image {
+    width: 25%;
+    height: 20%;
+    margin: 35px 20px;
+  }
+
+  /* Section 4 Styling  */
+
+  #section4 {
+    padding: 120px 80px;
+    display: initial;
+  }
+
+  .interior_design .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .interior_design img {
+    height: 300px;
+    margin-top: 5%;
+  }
+
+  #info2 {
+    width: 100%;
+    margin-left: 100px;
+  }
+  #info2 h1 {
+    margin-top: 40px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    margin-left: 19px;
+    width: 200px;
+  }
+  #info2 p {
+    margin-top: 23px;
+    margin-bottom: 1rem;
+    margin-left: 23px;
+    width: 200px;
+    text-align: center;
+  }
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #section .info p {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  #section4 {
+    padding: 80px 40px;
+  }
+
+  .interior_design img {
+    height: 400px;
+  }
+
+  #section4 .info {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  #section .info h1 {
+    font-weight: bold;
+    font-family: "Monserrat";
+    font-size: 1.5rem;
+  }
+
+  #section .info p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
